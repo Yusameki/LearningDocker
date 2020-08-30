@@ -82,10 +82,6 @@ conf.d  fastcgi_params  koi-utf  koi-win  mime.types  modules  nginx.conf  scgi_
 
 
 
-
-
-
-
 > 端口模式概要图
 
 ![docker-ports.png](https://github.com/Yusameki/LearningDocker/blob/master/Pictures/docker-ports.png?raw=true)
