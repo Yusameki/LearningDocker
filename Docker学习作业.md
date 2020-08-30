@@ -64,6 +64,28 @@ Commercial support is available at
 </html>
 ```
 
+![nginx-runtest.png](https://github.com/Yusameki/LearningDocker/blob/master/Pictures/nginx-runtest.png?raw=true)
+
+> 进入nginx
+
+```shell
+root@d0d842a37c9c:/# ls
+bin   dev                  docker-entrypoint.sh  home  lib64  mnt  proc  run   srv  tmp  var
+boot  docker-entrypoint.d  etc                   lib   media  opt  root  sbin  sys  usr
+root@d0d842a37c9c:/# whereis nginx
+nginx: /usr/sbin/nginx /usr/lib/nginx /etc/nginx /usr/share/nginx
+root@d0d842a37c9c:/# cd etc/nginx/
+root@d0d842a37c9c:/etc/nginx# ls
+conf.d  fastcgi_params  koi-utf  koi-win  mime.types  modules  nginx.conf  scgi_params  uwsgi_params  win-utf
+#即可动态修改nginx内的配置文件
+```
+
+
+
+
+
+
+
 > 端口模式概要图
 
 ![docker-ports.png](https://github.com/Yusameki/LearningDocker/blob/master/Pictures/docker-ports.png?raw=true)
