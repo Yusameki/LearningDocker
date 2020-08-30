@@ -32,6 +32,10 @@ dbb2fdf01794        nginx               "/docker-entrypoint.…"   7 seconds ago
 8ee32f7376bc        centos              "/bin/bash"              5 hours ago         Up 5 hours                                 elated_galileo
 ba68a79f276c        ed15b5429189        "/docker-entrypoint.…"   6 hours ago         Up 6 hours          80/tcp                 quirky_brown
 
+#-d 后台运行
+# --name 给容器命名
+# -p 宿主机端口
+
 $ curl localhost:3344
 <!DOCTYPE html>
 <html>
