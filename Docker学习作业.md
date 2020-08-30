@@ -31,6 +31,33 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 dbb2fdf01794        nginx               "/docker-entrypoint.…"   7 seconds ago       Up 6 seconds        0.0.0.0:3344->80/tcp   nginx01
 8ee32f7376bc        centos              "/bin/bash"              5 hours ago         Up 5 hours                                 elated_galileo
 ba68a79f276c        ed15b5429189        "/docker-entrypoint.…"   6 hours ago         Up 6 hours          80/tcp                 quirky_brown
+
+$ curl localhost:3344
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
 ```
 
 > 端口模式概要图
