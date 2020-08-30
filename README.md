@@ -77,5 +77,5 @@ $ sudo docker run hello-world
 
 > 小作业
 
-[Docker练习1](https://github.com/Yusameki/LearningDocker/blob/master/Docker学习作业.md)
+[小练习1](https://github.com/Yusameki/LearningDocker/blob/master/Docker小练习1-nginx.md)
 
