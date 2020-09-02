@@ -79,3 +79,4 @@ $ sudo docker run hello-world
 
 [Docker安装Nginx](https://github.com/Yusameki/LearningDocker/blob/master/practice/Docker小练习1-nginx.md)
 
+[Docker部署Tomcat](https://github.com/Yusameki/LearningDocker/blob/master/practice/Docker小练习2-tomcat.md)
