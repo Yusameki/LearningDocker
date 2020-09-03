@@ -81,4 +81,3 @@ root@25cac9ccdb78:/usr/local/tomcat# cp -r webapps.dist/* webapps
 
 ![tomcat-success.png](https://github.com/Yusameki/LearningDocker/blob/master/Pictures/tomcat-success.png?raw=true)
 
-成功访问！
