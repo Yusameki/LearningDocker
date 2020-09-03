@@ -86,7 +86,7 @@ conf.d  fastcgi_params  koi-utf  koi-win  mime.types  modules  nginx.conf  scgi_
 
 ![docker-ports.png](https://github.com/Yusameki/LearningDocker/blob/master/Pictures/docker-ports.png?raw=true)
 
-得开放3344端口才能从外部访问。
+
 
 
 
