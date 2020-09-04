@@ -1,4 +1,4 @@
-# Docker小练习2
+# Docker-commit
 
 > Docker启动tomcat
 
@@ -8,36 +8,12 @@
 ```
 
 ```shell
-$ docker run tomcat 
+$ docker run -it -p 8080:8080 --name tomcat01 tomcat
 ```
 
 
 
-> 运行测试
-
-```shell
-#看看有没有这个镜像
-$ docker images
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-tomcat              latest              d5eef28cf41d        10 hours ago        647MB
-
-#启动tomcat
-$ docker run -d -p 3355:8080 --name tomcat01 tomcat
-25cac9ccdb78a57d18dfb62d983c29eb25c18a3741921cd4bbaf2abc1e1c4357
-#-d 后台启动
-```
-
-
-
-> 浏览器进入测试
-
-![tomcat-browser.png](https://github.com/Yusameki/LearningDocker/blob/master/Pictures/tomcat-browser.png?raw=true)
-
-测试进入没问题，但是无法显示tomcat
-
-
-
-> 进入tomcat寻找理由
+> 进入tomcat并修改webapps
 
 ```shell
 root@25cac9ccdb78:/usr/local/tomcat# ll
