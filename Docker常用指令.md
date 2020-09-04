@@ -28,7 +28,7 @@
 
 ```shell
 attach		#进入指定容器当前的shell
-commit		#将当前容器保存为新的镜像
+commit		#将当前容器保存为新的镜像 -a="作者" -m="信息" id 名字：版本
 cp		#从容器中拷贝指定文件or目录到主机
 exec		#进入容器并新建一个shell
 export		#导出容器内内容并归档为tar文件
@@ -44,7 +44,7 @@ push		#推送镜像到docker服务器
 restart		#重启容器
 rm		#移除容器
 rmi		#移除镜像
-run		#运行镜像
+run		#运行镜像 -it动态运行 -d后台运行 -p端口
 search		#在hub中搜索镜像
 top		#查看 容器中 运行中的进程信息
 ```
