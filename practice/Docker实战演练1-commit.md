@@ -1,10 +1,9 @@
 # Docker-commit
 
-> Docker启动tomcat
+> Docker制作一个一开始就有webapps的tomcat
 
 ```shell
-#直接用docker run命令实现安装和运行
- 可以在docker hub上搜索版本号实现指定版本下载
+#启动一个默认的tomcat
 ```
 
 ```shell
@@ -41,4 +40,21 @@ root@25cac9ccdb78:/usr/local/tomcat# cp -r webapps.dist/* webapps
 > 重新用浏览器访问测试
 
 ![tomcat-success.png](https://github.com/Yusameki/LearningDocker/blob/master/Pictures/tomcat-success.png?raw=true)
+
+
+
+> 提交新镜像
+
+```shell
+$ docker commit -a="yusameki" -m="add webapps" 22b07304da81 tomcat01:1.0
+sha256:bd36d07b5c71dc91bc1475549236f2cc68386e8d783bfd31284344afc4099500
+```
+
+完成新镜像！
+
+```shell
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+tomcat01            1.0                 bd36d07b5c71        46 seconds ago      652MB
+```
 
