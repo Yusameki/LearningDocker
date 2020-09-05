@@ -37,9 +37,9 @@ ERROR: for baabp-st_master  Cannot create container for service baabp-st_master:
 ERROR: Encountered errors while bringing up the project.
 ```
 
-エラーが出た，調べてみたらDockerのShareフォルダの問題かも
+エラーが出た，調べてみたらDockerのShareフォルダの問題かも．
 
-File Sharingに全Diskを追加
+File Sharingに全Diskを追加．
 
 ```shell
 $ docker-compose up -d
@@ -49,18 +49,20 @@ ERROR: for baabp-st_master  Cannot create container for service baabp-st_master:
 ERROR: Encountered errors while bringing up the project.
 ```
 
-Nvidia-Dockerが無かったので，docker runを試みる
+Nvidia-Dockerが無かったので，docker runを試みる．
 
 ```shell
 $ docker run --gpus all nvidia/cuda nvidia-smi
 docker: Error response from daemon: could not select device driver "" with capabilities: [[gpu]].
 ```
 
-調べたら，nvidia-container-runtimeがまだwindowsに対応していないことが分かった
+調べたら，nvidia-container-runtimeがwindowsに対応していないことが分かった．
 
 
 
+> windowsで動かすために
 
+更に調べると，まだリリースしていないwindowsの20xxx版にWSL2が搭載されていることが分かった．
 
 
 
