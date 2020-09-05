@@ -60,9 +60,29 @@ docker: Error response from daemon: could not select device driver "" with capab
 
 
 
-> windowsで動かすために
+> windowsでGPUを動かすために
 
 更に調べると，まだリリースしていないwindowsの20xxx版にWSL2が搭載されていることが分かった．
 
+WSLはwindowsに搭載されているLinuxなので，当然Linuxに対応したnvidia-container-runtimeが使用できる．
 
+しかし，WSLにはnvidiaのドライバーを導入することが出来ないため，CUDAも当然使えない．
+
+そこでWSL2になると，なんと専用のGPUドライバーが
+
+[CUDA on Windows Subsystem for Linux (WSL) - Public Preview](https://developer.nvidia.com/cuda/wsl)
+
+出ていることが分かった．
+
+[CUDA on WSL User Guide](https://docs.nvidia.com/cuda/wsl-user-guide/index.html#abstract)
+
+このサイトのガイドに従ってインストール．まとめると
+
+1. Windowsのinsiderプログラムに参加し，previewにアップデート
+2. WSL2をオンにする
+3. Ubuntuをダウンロード
+4. CUDAをインストール
+5. dockerとnvidia-container-runtimeを導入する
+
+になります．
 
