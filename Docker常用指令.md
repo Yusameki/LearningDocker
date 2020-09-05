@@ -68,8 +68,6 @@ rw readwrite	#可读可写
 
 ## DockerFile
 
-![dockerfile.png](https://github.com/Yusameki/LearningDocker/blob/master/Pictures/dockerfile.png?raw=true)
-
 ### 基础知识
 
 1.每个指令都要大写
@@ -86,7 +84,9 @@ rw readwrite	#可读可写
 
 
 
+## DockerFile的指令
 
+![dockerfile.png](https://github.com/Yusameki/LearningDocker/blob/master/Pictures/dockerfile.png?raw=true)
 
 
 
