@@ -1,4 +1,4 @@
-# Docker学习初级小结 
+# Docker学习概要
 
 ###  前言
 
@@ -66,7 +66,21 @@ rw readwrite	#可读可写
 
 
 
+## DockerFile
 
+![dockerfile.png](https://github.com/Yusameki/LearningDocker/blob/master/Pictures/dockerfile.png?raw=true)
+
+### 基础知识
+
+1.每个指令都要大写
+
+2.从上到下依次执行
+
+3.#表示注释
+
+4.每个指令都会创建一个新的镜像层并提交
+
+![dockerfile-structure.png](https://github.com/Yusameki/LearningDocker/blob/master/Pictures/dockerfile-structure.png?raw=true)
 
 
 
