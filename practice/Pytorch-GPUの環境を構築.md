@@ -7,6 +7,7 @@ Takayama様のDockerFileからGPU動作のPytorch環境を構築したい！
 > Docker Imageのビルド
 
 ```shell
+#DockerFileが用意されたのでそのままビルド
 $ docker build -f Dockerfile -t baabp/st:torch-cuda .
 
 Successfully built 37c739e1f4a8
@@ -28,10 +29,11 @@ baabp/st            torch-cuda          37c739e1f4a8        3 minutes ago       
 > Docker コンテナの起動
 
 ```shell
+#Coposeファイルの要求に従って起動したい
 $ docker-compose up
 Creating baabp-st_master ... error
 
-ERROR: for baabp-st_master  Cannot create container for service baabp-st_master: status code not OK but 500: {"Message":"Unhandled exception: Filesharing has been cancelled","StackTrace":" 
+ERROR: for baabp-st_master  Cannot create container for service baabp-st_master: status code not OK but 500: {"Message":"Unhandled exception: Filesharing has been cancelled","StackTrace":" ....
 ERROR: Encountered errors while bringing up the project.
 ```
 
@@ -43,8 +45,22 @@ File Sharingに全Diskを追加
 $ docker-compose up -d
 Creating baabp-st_master ... error
 
-ERROR: for baabp-st_master  Cannot create container for service baabp-st_master: Unknown runtime specified nvidia
+ERROR: for baabp-st_master  Cannot create container for service baabp-st_master: Unknown runtime specified nvidia....
+ERROR: Encountered errors while bringing up the project.
 ```
+
+Nvidia-Dockerが無かったので，docker runを試みる
+
+```shell
+$ docker run --gpus all nvidia/cuda nvidia-smi
+docker: Error response from daemon: could not select device driver "" with capabilities: [[gpu]].
+```
+
+調べたら，nvidia-container-runtimeがまだwindowsに対応していないことが分かった
+
+
+
+
 
 
 
