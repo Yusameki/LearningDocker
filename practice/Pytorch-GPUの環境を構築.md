@@ -113,6 +113,23 @@ $ docker run --gpus all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchma
 
 ```shell
 #事前準備としてcurlが必要
-sudo curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+$ sudo curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+```
+
+
+
+> もう一度buildする
+
+```shell
+#docker-composeファイルを使ってビルドしてみる
+$ docker-compose build
+ERROR: Version in "./docker-compose.yml" is unsupported.
+
+#バージョンが違ったみたい，最新版を探してインストール
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+#もう一度試す
+$ docker-compose build
+
 ```
 
