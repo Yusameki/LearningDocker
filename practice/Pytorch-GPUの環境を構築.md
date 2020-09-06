@@ -216,3 +216,15 @@ coposeファイルより，ローカルの8008ポートにあるはずなので�
 ![jupyter.png](https://github.com/Yusameki/LearningDocker/blob/master/Pictures/jupyter.png?raw=true)
 
 ちゃんと起動していることが分かる．
+
+
+
+> GPUが使えるかどうかを確認
+
+```python
+import torch
+print(torch.cuda.is_available())
+>>True
+```
+
+GPUが使用できることを確認した！
