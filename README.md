@@ -83,4 +83,4 @@ $ sudo docker run hello-world
 
 [commit一个自带webapps的tomcat](https://github.com/Yusameki/LearningDocker/blob/master/practice/Docker实战演练1-commit.md)
 
-[构筑一个深度学习容器](https://github.com/Yusameki/LearningDocker/blob/master/practice/Pytorch-GPUの環境を構築.md)
+[构筑一个深度学习容器](https://github.com/Yusameki/LearningDocker/blob/master/practice/nvidia-docker-on-windows.md)
