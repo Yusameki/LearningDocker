@@ -209,7 +209,7 @@ root@cd0e23e6d855:/src# jupyter lab --ip=0.0.0.0 --port=8008 --allow-root
 [I 14:19:43.892 LabApp] http://cd0e23e6d855:8008/
 ```
 
-coposeファイルより，ローカルの8008ポートにあるはずなのでブラウザーで起動してみる
+composeファイルより，ローカルの8008ポートにあるはずなのでブラウザーで起動してみる
 
 `http://localhost:8008/`
 
