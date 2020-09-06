@@ -58,6 +58,8 @@ docker: Error response from daemon: could not select device driver "" with capab
 
 調べたら，nvidia-container-runtimeがwindowsに対応していないことが分かった．
 
+Docker desktopはWSL2インストール後必要なくなるためアンインストールする．
+
 
 
 > windowsでGPUを動かすために
@@ -87,4 +89,30 @@ WSLはwindowsに搭載されているLinuxなので，当然Linuxに対応した
 になります．
 
 時間があったらWSL2でGPUを使う手順を別ファイルでまとめる．
+
+
+
+> インストールが終わったらGPUベンチマークで試す
+
+```shell
+$ docker run --gpus all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark 
+> Compute 6.1 CUDA device: [TITAN X (Pascal)]
+28672 bodies, total time for 10 iterations: 23.859 ms
+= 344.556 billion interactions per second
+= 6891.125 single-precision GFLOP/s at 20 flops per interaction
+#TITAN Xが無事に認識できた！
+```
+
+
+
+> Docker-composeをインストールする
+
+普通のLinuxと同じ扱いなので下のオフィシャルガイドに従ってやる
+
+[Docker Compose のインストール](http://docs.docker.jp/compose/install.html#linux-compose)
+
+```shell
+#事前準備としてcurlが必要
+sudo curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+```
 
