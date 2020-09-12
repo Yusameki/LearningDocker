@@ -3,7 +3,7 @@
 
 参考了[狂神说](https://space.bilibili.com/95256449)的[视频](https://www.bilibili.com/video/BV1og4y1q7M4)。
 
-非常感谢。
+感谢。
 
 
 
