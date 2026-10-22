@@ -4,7 +4,7 @@
 
 **Docker notes I copied from a video series, then actually ran myself**
 
-<sub>**English** · [中文](README.zh-CN.md)</sub>
+<sub>**English** · [日本語](README.ja.md) · [中文](README.zh-CN.md)</sub>
 
 <sub>Main reference: [狂神说](https://space.bilibili.com/95256449)'s [video series](https://www.bilibili.com/video/BV1og4y1q7M4) — many thanks 🙏</sub>
 
