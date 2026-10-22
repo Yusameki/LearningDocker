@@ -1,32 +1,34 @@
 <div align="center">
 
-# 🐳 学习 Docker 的一点记录
+# 🐳 Learning Docker, bit by bit
 
-**跟着视频一点点抄下来、又自己动手跑过一遍的 Docker 笔记**
+**Docker notes I copied from a video series, then actually ran myself**
 
-<sub>主要参考了 [狂神说](https://space.bilibili.com/95256449) 的 [视频](https://www.bilibili.com/video/BV1og4y1q7M4)，非常感谢 🙏</sub>
+<sub>**English** · [中文](README.zh-CN.md)</sub>
+
+<sub>Main reference: [狂神说](https://space.bilibili.com/95256449)'s [video series](https://www.bilibili.com/video/BV1og4y1q7M4) — many thanks 🙏</sub>
 
 </div>
 
 ---
 
-## 📑 目录
+## 📑 Contents
 
-- [安装 Docker（Ubuntu）](#安装-dockerubuntu)
-- [基础指令笔记](#基础指令笔记)
-- [小练习](#小练习)
+- [Install Docker (Ubuntu)](#install-docker-ubuntu)
+- [Command cheat sheet](#command-cheat-sheet)
+- [Small exercises](#small-exercises)
 
 ---
 
-## 安装 Docker（Ubuntu）
+## Install Docker (Ubuntu)
 
-### ① 卸载老版本
+### ① Remove old versions
 
 ```bash
 sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 
-### ② 设置存储库
+### ② Set up the repository
 
 ```shell
 sudo apt-get update
@@ -41,7 +43,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
 ```
 
-指纹应该是这样：
+The fingerprint should look like this:
 
 ```
 pub   rsa4096 2017-02-22 [SCEA]
@@ -57,40 +59,40 @@ sudo add-apt-repository \
    stable"
 ```
 
-### ③ 安装 Docker Engine
+### ③ Install Docker Engine
 
 ```shell
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-### ④ 检查一下
+### ④ Check it
 
 ```shell
 sudo docker run hello-world
 ```
 
-看到熟悉的 `Hello from Docker!` 就装好啦 ✨
+If you see the familiar `Hello from Docker!`, you're done ✨
 
-## 基础指令笔记
+## Command cheat sheet
 
-入门的时候把最常用的那批命令都抄了一遍，汇总在这里：
+I copied down the most common commands while learning — collected here:
 
-→ [Docker 常用指令](https://github.com/Yusameki/LearningDocker/blob/master/Docker常用指令.md)
+→ [Docker commands](https://github.com/Yusameki/LearningDocker/blob/master/Docker常用指令.md) *(in Chinese)*
 
-## 小练习
+## Small exercises
 
-边学边动手的几个小作业：
+A few little assignments I did while learning:
 
-| 练习 | 内容 |
+| Exercise | What it covers |
 | --- | --- |
-| [Docker 安装 Nginx](https://github.com/Yusameki/LearningDocker/blob/master/practice/Docker小练习1-nginx.md) | 第一次把镜像跑成网页 |
-| [Docker 部署 Tomcat](https://github.com/Yusameki/LearningDocker/blob/master/practice/Docker小练习2-tomcat.md) | 顺手试了端口映射 |
-| [commit 一个自带 webapps 的 tomcat](https://github.com/Yusameki/LearningDocker/blob/master/practice/Docker实战演练1-commit.md) | 用自己的容器搓镜像 |
-| [nvidia-docker（日本語）](https://github.com/Yusameki/LearningDocker/blob/master/practice/nvidia-docker-on-windows.md) | 在 Windows 上让容器摸到 GPU |
+| [Run Nginx in Docker](https://github.com/Yusameki/LearningDocker/blob/master/practice/Docker小练习1-nginx.md) *(zh)* | First time turning an image into a web page |
+| [Deploy Tomcat in Docker](https://github.com/Yusameki/LearningDocker/blob/master/practice/Docker小练习2-tomcat.md) *(zh)* | Tried port mapping along the way |
+| [Commit a tomcat with webapps baked in](https://github.com/Yusameki/LearningDocker/blob/master/practice/Docker实战演练1-commit.md) *(zh)* | Building an image from my own container |
+| [nvidia-docker (日本語)](https://github.com/Yusameki/LearningDocker/blob/master/practice/nvidia-docker-on-windows.md) | Letting containers see the GPU on Windows |
 
 ---
 
 <div align="center">
-<sub>记录还在慢慢补，Docker 的路也还在慢慢走 (´-ω-`)</sub>
+<sub>Still adding to these notes, still walking the Docker road (´-ω-`)</sub>
 </div>
